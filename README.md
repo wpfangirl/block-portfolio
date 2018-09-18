@@ -17,9 +17,13 @@ This is an extremely rudimentary plugin, created for WordCamp Sacramento 2018.
 
 ## Installation
 
-1. Upload `block-portfolio.php` to the `/wp-content/plugins/` directory
+1. Upload `block-portfolio.zip` via the 'Plugins | Add New |Upload' in the WordPress admin, or unzip the file and upload the `block-portfolio` folder to the `/wp-content/plugins/` directory by FTP or SSH.
 1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Start creating your portfolio
+1. There are no settings for this plugin. Your portfolio entries and portfolio taxonomies will appear in the left admin menu. 
+
+## Screenshots
+1. What you see when you add a new portfolio item.
+![screenshot of new portfolio item with empty blocks](../blob/master/assets/screenshot-1.png)
 
 ## Changelog
 
