@@ -23,7 +23,7 @@ This is an extremely rudimentary plugin, created for WordCamp Sacramento 2018.
 
 ## Screenshots
 1. What you see when you add a new portfolio item.
-![screenshot of new portfolio item with empty blocks](../blob/master/assets/screenshot-1.png)
+![screenshot of new portfolio item with empty blocks](https://github.com/wpfangirl/block-portfolio/blob/master/assets/screenshot-1.png)
 
 ## Changelog
 
