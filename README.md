@@ -6,6 +6,7 @@ Requires at least: 4.9.8
 Tested up to: 4.9.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Stable tag: 0.6
 
 Creates a portfolio post type with 3 custom taxonomies and a Gutenberg block template for single portfolio entries.
 
@@ -26,6 +27,9 @@ This is an extremely rudimentary plugin, created for WordCamp Sacramento 2018.
 ![screenshot of new portfolio item with empty blocks](https://github.com/wpfangirl/block-portfolio/blob/master/assets/screenshot-1.png)
 
 ## Changelog
+
+= 0.6 =
+* Added block attributes for headings and paragraphs.
 
 = 0.5 =
 * First functional version, not really ready for prime time but shouldn't blow up anyone's site.

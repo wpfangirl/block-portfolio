@@ -3,7 +3,7 @@
 Plugin Name:  Block-Based Portfolio
 Plugin URI:   https://github.com/wpfangirl/block-portfolio
 Description:  Gutenberg-compatible portfolio post type with block-based layout and custom taxonomies
-Version:      0.1
+Version:      0.6
 Author:       WP Fangirl
 Author URI:   https://www.wpfangirl.com/
 License:      GPL2
@@ -116,19 +116,27 @@ if ( ! function_exists('bbp_setup_post_type') ) {
 			'template' => array(
 				array( 'core/heading', array(
 					'placeholder' => 'Executive Summary',
+					'level' => '2',
 					) 
 				),
 				array( 'core/paragraph', array(
 					'placeholder' => 'Put the problem and the results you got into about 160 characters, with keywords. Then you can use it for your meta description.',
+					'customFontSize' => '24',
 					) 
 				),
-				array( 'core/columns', array(), array(
+				array( 'core/columns', 
+					array(
+						'align' => 'wide',
+						'columns' => '2',
+					), 
+				array(
 					array( 'core/column', array(), array(
 						array( 'core/image', array() ),
 					) ),
 					array( 'core/column', array(), array(
 						array( 'core/heading', array(
-							'placeholder'=> 'Client Company Name'
+							'placeholder'=> 'Client Company Name',
+							'level'	=> '3',
 						) ),
 						array( 'core/paragraph', array(
 							'placeholder' => 'Describe your client: industry, company size, who their customer is, what they do.',
@@ -139,6 +147,7 @@ if ( ! function_exists('bbp_setup_post_type') ) {
 				) ),
 				array( 'core/heading', array(
 					'placeholder' => 'The Challenge',
+					'level' => '2',
 				) ),
 				array( 'core/paragraph', array(
 					'placeholder' => 'Why did your client need your services?',
@@ -148,6 +157,7 @@ if ( ! function_exists('bbp_setup_post_type') ) {
 				) ),
 				array( 'core/heading', array(
 					'placeholder' => 'Your Solution',
+					'level' => '2',
 				) ),
 				array( 'core/paragraph', array(
 					'placeholder' => 'Write two or three short paragraphs describing what you did to solve the problem.',
@@ -157,9 +167,13 @@ if ( ! function_exists('bbp_setup_post_type') ) {
 				) ),
 				array( 'core/heading', array(
 					'placeholder' => 'Results and ROI',
+					'level' => '2',
 				) ),
 				array( 'core/paragraph', array(
 					'placeholder' => 'You need a keyword-rich sound bite with numbers in it, e.g. tripled revenue or cut production time in half.',
+					'customFontSize' => '20',
+					'customTextColor' => '#FF6900',
+
 				) ),
 				array( 'core/paragraph', array(
 					'placeholder' => 'Provide more detail about how happy the client is and why. You could put another quote here instead.',
@@ -169,9 +183,14 @@ if ( ! function_exists('bbp_setup_post_type') ) {
 				) ),
 				array( 'core/paragraph', array(
 					'placeholder' => 'Write your call to action here. Give it a large font size and a color background.',
+					'customFontSize' => '28',
+					'customTextColor' => '#ffffff',
+					'customBackgroundColor' => '#313131',
 				) ),
-				array( 'core/button', array() 
-				),
+				array( 'core/button', array(
+					'customBackgroundColor' => '#CF2E2E',
+					'customTextColor' => '#ffffff',
+				) ),
 			),
 		);
 		register_post_type( 'bbp_portfolio', $args );
