@@ -27,10 +27,12 @@
 * `width`
 * `height`
 * `linkDestination`
+
 ## core/list
+* `ordered` (default: false)
 ## core/paragraph
 * `align`
-* `dropCap` (default:false)
+* `dropCap` (default: false)
 * `placeholder`
 * `textColor`
 * `customTextColor`

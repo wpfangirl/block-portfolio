@@ -14,7 +14,7 @@ Creates a portfolio post type with 3 custom taxonomies and a Gutenberg block tem
 
 This plugin builds the single portfolio entry from core Gutenberg blocks, arranged in a template to make it easier to create a portfolio of project case studies. Includes two hierarchical taxonomies (project type and client type) and one flat taxonomy (project tag).
 
-This is an extremely rudimentary plugin, created for WordCamp Sacramento 2018.
+Block attributes are now set for heading levels, font sizes in paragraphs, and alignment of images.
 
 ## Installation
 

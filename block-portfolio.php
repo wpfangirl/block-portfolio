@@ -190,6 +190,7 @@ if ( ! function_exists('bbp_setup_post_type') ) {
 				array( 'core/button', array(
 					'customBackgroundColor' => '#CF2E2E',
 					'customTextColor' => '#ffffff',
+					'align' => 'center',
 				) ),
 			),
 		);
